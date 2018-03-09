@@ -19,5 +19,10 @@ jobs:
     steps:
       - checkout
       - run: echo "premier hello"
+  workflows:
+    version: 2
+    one:
+      jobs:
+        - docker
 
 
